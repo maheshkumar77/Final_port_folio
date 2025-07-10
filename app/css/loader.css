@@ -1,0 +1,68 @@
+.loader {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 6s infinite linear;
+  border-radius: 20px; /* Rounded corners for a smoother look */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Increased shadow for depth */
+}
+
+.loader::before,
+.loader::after,
+.loader .side1,
+.loader .side2,
+.loader .side3,
+.loader .side4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  backface-visibility: hidden;
+  border-radius: 20px; /* Rounded edges for smoother effect */
+}
+
+.loader::before {
+  content: "";
+  background-image: url('https://miro.medium.com/v2/resize:fit:1100/format:webp/1*4FjuzAZS_zik5wYs_PCMnQ.gif');
+  transform: rotateY(0deg) translateZ(100px); /* Adjusted translation for larger size */
+}
+
+.loader .side1 {
+  background-image: url('https://www.mindmade.in/wp-content/uploads/2024/01/code.gif');
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.loader .side2 {
+  background-image: url('https://imarticus.org/blog/wp-content/uploads/2019/05/careerp1.gif');
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.loader .side3 {
+  background-image: url('https://camo.githubusercontent.com/6f927365ba0fec8bd6e97bdcb9837c500515600a8c1bcc100f3c7a5287c6889e/68747470733a2f2f6c66736f6c7574696f6e732e6e65742f77702d636f6e74656e742f75706c6f6164732f323032312f31322f46756c6c2d537461636b2d446576656c6f706d656e742d46656174757265642d496d6167652d4c6576656c466976652d536f6c7574696f6e732e676966');
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.loader .side4 {
+  background-image: url('https://camo.githubusercontent.com/6f927365ba0fec8bd6e97bdcb9837c500515600a8c1bcc100f3c7a5287c6889e/68747470733a2f2f6c66736f6c7574696f6e732e6e65742f77702d636f6e74656e742f75706c6f6164732f323032312f31322f46756c6c2d537461636b2d446576656c6f706d656e742d46656174757265642d496d6167652d4c6576656c466976652d536f6c7574696f6e732e676966');
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(270deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}

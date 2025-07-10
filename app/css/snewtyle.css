@@ -1,0 +1,38 @@
+
+
+#l{
+    z-index: 0;
+    animation: changecol 2s ease-in-out infinite;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    box-shadow: rgba(219, 213, 213, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;      
+}
+#k{
+    z-index: 1;
+}
+
+@keyframes changecol {
+    0% {
+        background-image: conic-gradient(#bb42af, #7aa133, #0f7490, #2624b5, #ff45ff, #bd3b3d, #650b65, #b4ce1f);
+    }
+    10% {
+        background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    }
+    20% {
+        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);}
+    30% {
+        background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);}
+    40% {
+        background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);}
+    50% {
+        background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);}
+    60% {
+        background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);}
+    70% {
+        background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);}
+    80% {
+        background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);}
+    90% {
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);}
+    100% {
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);}
+}
